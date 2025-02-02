@@ -80,3 +80,26 @@ ul a:link, a:visited {
 .button.destaque:hover {
     background: #2d73ff;
 }
+
+/* Tipografia */
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.texto-destaque {
+    color: #0b5cff;
+
+}
