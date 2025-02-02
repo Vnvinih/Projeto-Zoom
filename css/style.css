@@ -126,3 +126,30 @@ h3 {
     color: #0b5cff;
 
 }
+
+@media ( max-width: 768px ) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'cabecalho'
+            'capa-conteudo'
+            'capa-img'
+            'organizacao-conteudo'
+            'organizacao-img'
+            
+        ;
+    }
+
+    header {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    
+
+}
