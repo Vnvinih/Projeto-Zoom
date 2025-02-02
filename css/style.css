@@ -12,6 +12,7 @@
 
     row-gap: 20px;
     column-gap: 20px;
+    padding: 10px;
 }
 
 header {
@@ -147,9 +148,17 @@ h3 {
     }
 
     h1 {
-        font-size: 1rem;
-        margin-top: 0;
+        font-size: 1.8rem;
     }
+
+    ul a:link, a:visited {
+        font-size: 0.8rem;
+        align-items: center;
     
+    }
+
+    .button {
+        font-size: 0.8rem;
+    }
 
 }
