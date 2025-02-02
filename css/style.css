@@ -1,0 +1,82 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        'cabecalho cabecalho'
+        'capa-conteudo capa-img'
+        'organizacao-img organizacao-conteudo'
+        
+    ;
+
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+header {
+    grid-area: cabecalho;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+section#capa-conteudo {
+    grid-area: capa-conteudo;
+}
+
+section#capa-img {
+    grid-area: capa-img;
+}
+
+section#organizacao-img {
+    grid-area: organizacao-img;
+}
+
+section#capa-img > img, section#organizacao-img > img {
+    max-width: 100%;
+}
+
+section#organizacao-conteudo {
+    grid-area: organizacao-conteudo;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ul a:link, a:visited {
+    padding: 10px;
+    text-decoration: none;
+    color: #484848;
+
+}
+
+.button {
+    text-decoration: none;
+    color: #0b5cff;
+    border: 2px solid #0b5cff;
+    border-radius: 25px;
+    padding: 5px 30px;
+}
+
+.button:hover {
+    background: #d2e1ff;
+    text-decoration: none;
+}
+
+.button.destaque {
+    background: #0b5cff;
+    color: white;
+}
+
+.button.destaque:hover {
+    background: #2d73ff;
+}
